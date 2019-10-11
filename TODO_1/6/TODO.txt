@@ -1,0 +1,2 @@
+Make a header/navigation that will appear on the top of all pages
+(maybe something that gets smaller when you scroll down, then reappears as fullsize when you are at the top of the page)

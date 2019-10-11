@@ -1,0 +1,3 @@
+"slideshow" page
+google how to "ajax" to load a new page in the center of the screen without reloading the page
+should have giant left/right buttons on outside to load next/previous "slideshow" page
