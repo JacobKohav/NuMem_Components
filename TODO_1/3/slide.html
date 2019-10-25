@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Slideshow page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<style>
+div{
+  text-align: center;
+}
+.vertical-center {
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one :-)       */
+
+	display: flex;
+	align-items: center;
+}
+.center-block {
+	display: table;
+	margin: 0 auto;
+}
+		</style>
+	</head>
+	<body>
+		<div id="carouselExampleIndicators" class="carousel slide vertical-center" data-ride="false" data-wrap="false" style="background-color:#cccccc; overflow: auto;">
+			<ol class="carousel-indicators">
+				<!--Slide links must be manually populated-->
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+
+				<!--Slide 1-->
+				<div class="carousel-item active">
+
+					<h1>Slideshow time!</h1>
+					<img class="img-responsive center-block" src="business.jpg" alt="First slide">
+				</div>
+
+
+				<!--Slide 2-->
+				<div class="carousel-item">
+					<h1>Videos can be embedded:</h1>
+
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a8c5wmeOL9o?rel=0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<!--Slide 3-->
+				<div class="carousel-item">
+
+					<h1>Last slide has link to quiz</h1>
+					<div class="d-flex h-100 align-items-center justify-content-center">
+						<h1>
+							<a href="">Take the quiz</a>
+						</h1>
+					</div>
+				</div>
+
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</body>
