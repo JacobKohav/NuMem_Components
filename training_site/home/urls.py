@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.urls import path
 from . import views
+from users import views as user_views
 
 app_name = "home" #for custom urls, so you don't have to hardcode
 
 urlpatterns = [
     path('', views.homepage, name="homepage"),
+    path('register/', user_views.register, name='register'),
     path('resource/<slug:title>/', views.resource_info, name='rec_detail')
 ]

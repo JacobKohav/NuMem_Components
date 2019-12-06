@@ -19,8 +19,11 @@ from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from django.conf import settings
+from django.contrib.auth.views import LogoutView, LoginView
 
 urlpatterns = [
-    path('', include('home.urls')), #use include with a str
+    path('', include('home.urls'), name=''), #use include with a str
     path('admin/', admin.site.urls),
+    path('logout/', LogoutView.as_view(), name="logout"),
+    path('login/', LoginView.as_view(), name="login"),
 ] + staticfiles_urlpatterns() + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
