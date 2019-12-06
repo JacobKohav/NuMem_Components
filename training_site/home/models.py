@@ -29,9 +29,9 @@ class ResourceLink(models.Model):
         return self.body[:25] + "..."
 
     def link_this(self):
-        long_string = self.body #replace this with the database textfield
+        long_string = self.quick_links #replace this with the database textfield
         link_list = long_string.splitlines()
         for i in range(len(link_list)):
             link_list[i] = '<a href="' + link_list[i] + '">'+ link_list[i] + ' </a><br>'
-            link_list = "\n".join(link for link in link_list)
-            return link_list
+        link_list = "\n".join(link for link in link_list)
+        return link_list
