@@ -1,1 +1,1 @@
-web: gunicorn training_site.wsgi
+web: gunicorn wsgi
