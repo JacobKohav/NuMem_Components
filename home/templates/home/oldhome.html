@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<h1>This it the homepage</h1>
+<div>
+	<div class="container">
+		<div class="card-deck">
+			{% for rec in resource_links %}
+
+
+			<div class="card" style="width: 18rem;">
+				<img src="/media/{{rec.thumbnail}}" class="card-img-top embed-responsive-item" alt="{{ rec.title }}-logo">
+				<div class="card-body">
+					<h5 class="card-title">{{ rec.title }}</h5>
+					<p class="card-text">{{ rec.body | safe }}</p>
+					<a class="btn btn-primary" href="{% url 'home:rec_detail' title=rec.slug %}">{{ rec.title }}</a>
+				</div>
+			</div>
+
+			{% endfor %}
+		</div>
+	</div>
+</div>
