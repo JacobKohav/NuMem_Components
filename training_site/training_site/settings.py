@@ -25,7 +25,7 @@ SECRET_KEY = '=q!siw42!w2bl*a-j=kq3)0tnxk3f57vnn!a6#1p3l$w=%+h7m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['trainingsiteapp.heroku.com']
 
 
 LOGIN_REDIRECT_URL = '/'
