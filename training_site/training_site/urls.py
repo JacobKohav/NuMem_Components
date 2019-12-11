@@ -26,4 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('logout/', LogoutView.as_view(), name="logout"),
     path('login/', LoginView.as_view(), name="login"),
+    path('quiz/', include('quiz.urls'), name ="quiz"),
 ] + staticfiles_urlpatterns() + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

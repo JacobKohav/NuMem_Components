@@ -24,7 +24,7 @@
 				<li><a href="#resource_links_area">RESOURCES</a></li>
 				<li><a href="#pricing">PRICING</a></li>
 				<li><a href="#contact">CONTACT</a></li>
-				<li><a href="#quiz">QUIZ</a></li>
+				<li><a href="/quiz/quiz">QUIZ</a></li>
 				{% if user.is_authenticated %}
 				<li><a href="{% url 'logout' %}" class="button">Logged in as {{request.user.username}} LOGOUT</a></li>
 				{% else %}
