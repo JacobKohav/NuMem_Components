@@ -19,10 +19,12 @@ from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from django.conf import settings
-from users import views as user_views
+from django.contrib.auth.views import LogoutView, LoginView
 
 urlpatterns = [
-    path('', include('home.urls')), #use include with a str
+    path('', include('home.urls'), name=''), #use include with a str
     path('admin/', admin.site.urls),
-    path('register/', user_views.register, name='register'),
+    path('logout/', LogoutView.as_view(), name="logout"),
+    path('login/', LoginView.as_view(), name="login"),
+    path('quiz/', include('quiz.urls'), name ="quiz"),
 ] + staticfiles_urlpatterns() + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,3 +1,0 @@
-This directory contains 6 objectives for the site.
-The priority here should be making a nice looking HTML and Javascript for each part
-Included are two very basic Python3 server examples you can use as a starting point to impliment a basic backend just to get the frontend to work for these

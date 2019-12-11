@@ -1,3 +1,0 @@
-django-extensions
-pillow
-django==2.0.12
