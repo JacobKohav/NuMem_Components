@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'home',#homepage app
-    'quiz',
+    'django_quiz/quiz',
     'multichoice',
     'true_false',
     'essay',
