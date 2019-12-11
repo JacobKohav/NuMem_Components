@@ -3,4 +3,4 @@ pillow
 django==2.0.12
 gunicorn
 django-heroku
-django-model-utils>=3.1.1
+git+git://github.com/tomwalker/django_quiz.git
